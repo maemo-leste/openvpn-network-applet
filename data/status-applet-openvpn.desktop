@@ -2,4 +2,4 @@
 Name=OpenVPN
 Comment=OpenVPN Status applet
 Type=default
-X-Path:status-applet-openvpn.so
+X-Path=status-applet-openvpn.so
