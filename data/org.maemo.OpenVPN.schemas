@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<gconfschemafile>
+ <schemalist>
+
+    <schema>
+      <key>/schemas/system/osso/connectivity/providers/openvpn/active_config</key>
+      <applyto>/system/osso/connectivity/providers/openvpn/active_config</applyto>
+      <owner>applet-openvpn</owner>
+      <type>string</type>
+      <default>Default</default>
+      <locale name="C">
+        <short>Active OpenVPN configuration</short>
+        <long>This key contains the selected active OpenVPN configuration</long>
+      </locale>
+    </schema>
+
+    <schema>
+        <key>/schemas/system/osso/connectivity/providers/openvpn/Default/systemtunnel-enabled</key>
+        <applyto>/system/osso/connectivity/providers/openvpn/Default/systemtunnel-enabled</applyto>
+        <owner>applet-openvpn</owner>
+        <type>bool</type>
+        <default>true</default>
+        <locale name="C">
+          <short>Tells if the configuration has system-wide tunneling enabled.</short>
+          <long>Tells if the configuration has system-wide tunneling enabled.</long>
+        </locale>
+    </schema>
+
+ </schemalist>
+</gconfschemafile>

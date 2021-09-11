@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=OpenVPN
+Comment=Change OpenVPN settings
+Type=HildonControlPanelPlugin
+Icon=statusarea_openvpn_enabled
+X-control-panel-plugin=control-applet-openvpn.so
+Categories=connectivity
