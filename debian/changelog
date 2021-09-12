@@ -1,0 +1,5 @@
+applet-openvpn (0.1) unstable; urgency=medium
+
+  * Initial packaging
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Sun, 12 Sep 2021 13:20:46 +0200

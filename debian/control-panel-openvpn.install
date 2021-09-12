@@ -1,0 +1,3 @@
+usr/share/applications/hildon-control-panel/*.desktop
+usr/lib/hildon-control-panel/*.so
+etc/gconf/schemas/*

@@ -1,0 +1,3 @@
+usr/share/applications/hildon-status-menu/*.desktop
+usr/share/icons/hicolor/*
+usr/lib/*/hildon-desktop/*.so
