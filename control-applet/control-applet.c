@@ -253,8 +253,10 @@ osso_return_t execute(osso_context_t * osso, gpointer data, gboolean user_act)
 		case CONFIG_LOAD:
 			gtk_widget_hide(maindialog);
 			selected = load_from_filesystem(maindialog);
-			save_to_gconf(selected);
-			g_free(selected);
+			if (selected != NULL ) {
+				save_to_gconf(selected);
+				g_free(selected);
+			}
 			break;
 		case CONFIG_DELETE:
 			delete_config(data, GTK_TREE_VIEW(cfg_tree));
