@@ -1,4 +1,4 @@
-Source: applet-openvpn
+Source: openvpn-network-applet
 Section: libs
 Priority: optional
 Maintainer: Ivan J. <parazyd@dyne.org>
