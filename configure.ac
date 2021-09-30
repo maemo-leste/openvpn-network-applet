@@ -9,6 +9,7 @@ AC_PROG_INSTALL
 AM_PROG_LIBTOOL
 
 PKG_CHECK_MODULES(libhildon, hildon-1)
+PKG_CHECK_MODULES(libhildonfm, hildon-fm-2)
 PKG_CHECK_MODULES(libhildondesktop, libhildondesktop-1)
 PKG_CHECK_MODULES(hildoncontrolpanel, hildon-control-panel)
 PKG_CHECK_MODULES(gtk2, gtk+-2.0)
@@ -28,6 +29,8 @@ controlpanellibdir=`pkg-config hildon-control-panel --variable=pluginlibdir`
 
 AC_SUBST(libhildon_CFLAGS)
 AC_SUBST(libhildon_LIBS)
+AC_SUBST(libhildonfm_CFLAGS)
+AC_SUBST(libhildonfm_LIBS)
 AC_SUBST(libhildondesktop_CFLAGS)
 AC_SUBST(libhildondesktop_LIBS)
 AC_SUBST(gtk2_CFLAGS)

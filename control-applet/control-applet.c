@@ -23,6 +23,7 @@
 #include <gtk/gtk.h>
 #include <gconf/gconf-client.h>
 #include <hildon/hildon.h>
+#include <hildon/hildon-fm.h>
 #include <hildon-cp-plugin/hildon-cp-plugin-interface.h>
 #include <connui/connui-log.h>
 //#include <icd/openvpn/libicd_openvpn_shared.h>
@@ -198,12 +199,11 @@ static gchar *load_from_filesystem(GtkWidget *parent)
 	GtkWidget *c;
 	gchar *ret;
 
-	c = gtk_file_chooser_dialog_new("Select configuration",
-		GTK_WINDOW(parent), GTK_FILE_CHOOSER_ACTION_OPEN, "Select", 0, NULL);
-	gtk_file_chooser_set_local_only(GTK_FILE_CHOOSER(c), TRUE);
+	c = hildon_file_chooser_dialog_new(GTK_WINDOW(parent),
+		GTK_FILE_CHOOSER_ACTION_OPEN);
 
 	switch (gtk_dialog_run(GTK_DIALOG(c))) {
-	case 0:
+	case -5: // TODO: Which enum is this?
 		ret = gtk_file_chooser_get_filename(GTK_FILE_CHOOSER(c));
 		break;
 	default:

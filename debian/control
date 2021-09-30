@@ -5,6 +5,7 @@ Maintainer: Ivan J. <parazyd@dyne.org>
 Build-Depends:
  debhelper-compat (= 12),
  libhildon1-dev,
+ libhildonfm2-dev,
  libhildondesktop1-dev,
  hildon-control-panel-dev,
  libgtk2.0-dev,
