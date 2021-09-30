@@ -1,3 +1,10 @@
+applet-openvpn (0.1.1) unstable; urgency=medium
+
+  * control: Use hildon-fm for file selection.
+  * control: Make sure config is not NULL when loading.
+
+ -- Ivan J. <parazyd@dyne.org>  Thu, 30 Sep 2021 23:22:13 +0200
+
 applet-openvpn (0.1) unstable; urgency=medium
 
   * Initial packaging
