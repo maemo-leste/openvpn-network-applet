@@ -158,8 +158,10 @@ static void set_buttons_sensitivity(StatusAppletOpenVpn * obj, gboolean state)
 {
 	StatusAppletOpenVpnPrivate *p = GET_PRIVATE(obj);
 
-	gtk_widget_set_sensitive(p->ovpn_chkbtn, state);
-	gtk_widget_set_sensitive(p->config_btn, state);
+	if (p && p->ovpn_chkbtn && p->config_btn) {
+		gtk_widget_set_sensitive(p->ovpn_chkbtn, state);
+		gtk_widget_set_sensitive(p->config_btn, state);
+	}
 }
 
 static void status_menu_clicked_cb(GtkWidget * btn, StatusAppletOpenVpn * self)
