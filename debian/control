@@ -4,6 +4,7 @@ Priority: optional
 Maintainer: Ivan J. <parazyd@dyne.org>
 Build-Depends:
  debhelper-compat (= 12),
+ maemo-system-services-dev,
  libhildon1-dev,
  libhildonfm2-dev,
  libhildondesktop1-dev,
@@ -32,3 +33,18 @@ Depends: ${misc:Depends}, ${shlibs:Depends},
  libicd-network-openvpn,
  libicd-provider-openvpn,
 Description: OpenVPN control panel applet
+
+Package: openvpn-maemo
+Section: user/network
+Architecture: all
+Depends:
+ ${misc:Depends}
+ status-area-openvpn,
+ control-panel-openvpn,
+ libicd-network-openvpn,
+ libicd-provider-openvpn,
+Description: OpenVPN connectivity package
+ This package serves as a metapackage to install ICD2 plugins and
+ providers for OpenVPN, and the accompanying graphical user
+ interfaces.
+XB-Maemo-Icon-26: ${maemo:icon26}

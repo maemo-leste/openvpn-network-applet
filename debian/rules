@@ -2,3 +2,7 @@
 
 %:
 	dh $@
+
+override_dh_gencontrol:
+	dh_maemo_icon
+	dh_gencontrol
