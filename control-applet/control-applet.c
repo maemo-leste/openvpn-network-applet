@@ -26,12 +26,7 @@
 #include <hildon/hildon-fm.h>
 #include <hildon-cp-plugin/hildon-cp-plugin-interface.h>
 #include <connui/connui-log.h>
-//#include <icd/openvpn/libicd_openvpn_shared.h>
-
-//#include "configuration.h"
-
-#define GC_OPENVPN "/system/osso/connectivity/providers/openvpn"
-#define GC_ICD_OPENVPN_AVAILABLE_IDS "/system/osso/connectivity/srv_provider/OPENVPN/available_ids"
+#include <icd/openvpn/libicd_openvpn_shared.h>
 
 enum {
 	CONFIG_LOAD,

@@ -26,21 +26,7 @@
 #include <hildon/hildon.h>
 #include <libhildondesktop/libhildondesktop.h>
 #include <libosso.h>
-//#include <icd/openvpn/libicd_openvpn_shared.h>
-
-#define ICD_OPENVPN_DBUS_INTERFACE "org.maemo.OpenVPN"
-#define ICD_OPENVPN_DBUS_PATH "/org/maemo/OpenVPN"
-#define ICD_OPENVPN_METHOD_GETSTATUS ICD_OPENVPN_DBUS_INTERFACE".GetStatus"
-#define ICD_OPENVPN_SIGNAL_STATUSCHANGED "StatusChanged"
-#define GC_OPENVPN "/system/osso/connectivity/providers/openvpn"
-#define GC_NETWORK_TYPE "/syste/osso/connectivity/network_type/OPENVPN"
-#define GC_OPENVPN_ACTIVE GC_NETWORK_TYPE"/active_config"
-#define GC_OPENVPN_SYSTEM GC_NETWORK_TYPE"/system_wide_enabled"
-#define ICD_OPENVPN_SIGNALS_STATUS_STATE_CONNECTED "Connected"
-#define ICD_OPENVPN_SIGNALS_STATUS_STATE_STOPPED "Stopped"
-#define ICD_OPENVPN_SIGNALS_STATUS_STATE_STARTED "Started"
-#define ICD_OPENVPN_SIGNALS_STATUS_MODE_NORMAL "Normal"
-#define ICD_OPENVPN_SIGNALS_STATUS_MODE_PROVIDER "Provider"
+#include <icd/openvpn/libicd_openvpn_shared.h>
 
 /* Use this for debugging */
 #include <syslog.h>
