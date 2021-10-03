@@ -34,7 +34,7 @@ Depends: ${misc:Depends}, ${shlibs:Depends},
  libicd-provider-openvpn,
 Description: OpenVPN control panel applet
 
-Package: openvpn-maemo
+Package: OpenVPN support for Maemo
 Section: user/network
 Architecture: all
 Depends:
